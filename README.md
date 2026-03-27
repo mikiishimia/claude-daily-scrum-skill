@@ -150,4 +150,4 @@ cp config.example.md config.md
 
 MIT License
 
-作者：[@shinmiki](https://x.com/shinmiki) / [株式会社シン・ミキイシジマ](https://shinmiki.com)
+作者：[イシジマミキ](https://x.com/mikiishijima)
