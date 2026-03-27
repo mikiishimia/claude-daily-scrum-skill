@@ -1,0 +1,10 @@
+# 個人設定ファイル（絶対にコミットしないこと）
+config.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
