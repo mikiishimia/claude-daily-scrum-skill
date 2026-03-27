@@ -96,7 +96,9 @@ cp config.example.md config.md
 ## 最終更新：YYYY-MM-DD
 ```
 
-### 5. Claude プロジェクトへの登録
+### 5. インストール方法（環境を選んでください）
+
+#### A. Claude.ai プロジェクト（推奨）
 
 1. Claude.ai で新しいプロジェクトを作成
 2. プロジェクトの「ファイル」に以下を追加：
@@ -109,6 +111,25 @@ cp config.example.md config.md
 このプロジェクトではSKILL.mdに定義されたスクラムマスター「ミキ」として動作してください。
 個人設定はconfig.mdを、直近の文脈はdaily-log.mdを参照してください。
 ```
+
+4. プロジェクトの「コネクタ」からGoogle Calendar・Gmail・Notionを接続
+
+#### B. Claude Code（CLI）
+
+Claude Code でもそのまま使えます。
+
+1. このリポジトリをクローン or ファイルを任意のディレクトリに配置
+2. Claude Code を起動したディレクトリに `SKILL.md`・`config.md`・`daily-log.md` を置く
+3. CLAUDE.md（なければ作成）に以下を追記：
+
+```markdown
+## スクラムマスタースキル
+SKILL.mdに定義されたスクラムマスター「ミキ」として動作してください。
+個人設定はconfig.mdを、直近の文脈はdaily-log.mdを参照してください。
+```
+
+4. MCPコネクタ（Google Calendar・Gmail・Notion）を `claude mcp add` で接続済みであることを確認
+5. `claude` を起動して「おはよう」と送信
 
 ---
 
